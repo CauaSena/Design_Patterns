@@ -21,7 +21,7 @@ public class Main {
 		realizarAcao = controle.fecharPortaoBtn; 
 		controle.click(realizarAcao);
 
-		boolean btnDesfazer = controle.clickDesfazerAcaoBtn;
-		System.out.println(btnDesfazer);
+		controle.clickVoltarAcao();
+		
 	}
 }

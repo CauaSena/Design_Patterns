@@ -11,19 +11,16 @@ public class ControleRemoto {
 	public Comando abrirPortaoBtn = new AbrirPortao(portao); 
 	public Comando fecharPortaoBtn = new FecharPortao(portao);
 
-	public boolean clickDesfazerAcaoBtn = clickVoltarAcao();
-
 	public void click(Comando btn) {
 		btn.executar();
 		LogComandos.registrarComando(btn);
 	}
 
-	public boolean clickVoltarAcao() {
+	public void clickVoltarAcao() {
 		if (!LogComandos.logs.isEmpty()) {
 			Comando desfazerAcao = LogComandos.logs.remove(LogComandos.logs.size()-1);
 			desfazerAcao.desfazer();
 		}	
-		return true;
 	}
 
 }

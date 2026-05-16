@@ -43,7 +43,7 @@ public class Acao {
 	public void removerObserver(ObservadorPreco observer) {
 		if (listaObservers.contains(observer)) {
 			listaObservers.remove(observer);
-			System.out.println(observer.getClass().getSimpleName() +" REMOVIDO!");
+			System.out.println(observer.getClass().getSimpleName()z +" REMOVIDO!");
 		}
 		else {
 			System.out.println("Já existe nessa base de dados!");
